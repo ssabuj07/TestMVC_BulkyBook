@@ -1,6 +1,12 @@
 ﻿@model IEnumerable<Category> // @ means I am using a C# code here
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@if(TempData["success"] != null)
+{
+    <h2>@TempData["success"]</h2>
 }
 
 <div class="container p-3">
