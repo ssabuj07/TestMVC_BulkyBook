@@ -33,7 +33,8 @@ namespace BulkyBookWeb.Controllers
                 //    }
                 //}
             }
-            return RedirectToAction("UserDashBoard");
+            return RedirectToAction("Index", "Category");
+            //return RedirectToAction("UserDashBoard");
             //return View(objUser);
         }
 
